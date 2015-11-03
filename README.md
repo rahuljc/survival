@@ -24,8 +24,11 @@ The above inputs can also be represented in the form of two arrays
 So, an input of [4,5,2,4,3,4,3] and [0,1,0,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,0] translates to 
 "Simulate through 3 generations of a field which has a dimension of 4 x 5 where a plant will survive if the neighbouring plant count is between 2 to 4 and a plant will be born if the neighbouring count is between 3 to 4 with an initial state of: 
 |0 1 0 1 0|
+
 |1 1 0 1 1|
+
 |1 0 1 1 0|
+
 |1 1 0 1 0|
 "
 If you have understood the problem, you are already halfway there. Now, you can channelize your thoughts towards the solution.
@@ -100,14 +103,19 @@ Lets go to Task 2. A function to return the neighbour count. The number of neigh
 
 
 |1 0|
+
 |0 1|
+
 |1 1|
 
 and 
 
 |0 1 0 1 0|
+
 |1 1 0 1 1|
+
 |1 0 1 1 0|
+
 |1 1 0 1 0|
 
 You could notice that the ones at the corner will have the least neighbours, followed by the edge blocks and finally the center blocks will have the maximum neighbours. It is important to consider only the neighbour blocks which have plants. 
