@@ -236,6 +236,8 @@ function print_field($array){
 }
 ```
 
-Don't forget to test ! Cheers.
+Don't forget to test. Check the final code [here](https://github.com/rahuljc/survival/plant_survival.php)
+
+Cheers !
 
 
