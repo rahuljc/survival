@@ -16,12 +16,13 @@ Consider a field which is divided into many square blocks. Some blocks have a pl
 4. Initial state of the field [0,1,0,1,1,0,1,0....] where 0 represents an empty block and 1 represents a plant.
 5. Output should be a one dimensional array of 0s and 1s depending on the conditions.
 
-The above inputs can also be represented in the form of two arrays 
+The above inputs can also be represented in the form of two arrays
+
 1. [D1,D2,S1,S2,B1,B2,G].
 2. [A00,A01,A02,A03,A04,A10,A11,A12....A44]
 
 So, an input of [4,5,2,4,3,4,3] and [0,1,0,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,0] translates to 
-"Simulate through 3 generations of a field which has a dimension of 4 x 4 where a plant will survive if the neighbouring plant count is between 2 to 4 and a plant will be born if the neighbouring count is between 3 to 4 with an initial state of: 
+"Simulate through 3 generations of a field which has a dimension of 4 x 5 where a plant will survive if the neighbouring plant count is between 2 to 4 and a plant will be born if the neighbouring count is between 3 to 4 with an initial state of: 
 |0 1 0 1 0|
 |1 1 0 1 1|
 |1 0 1 1 0|
@@ -93,11 +94,13 @@ function load_field($input_array,$rows,$col){
 ```
 
 Lets go to Task 2. A function to return the neighbour count. The number of neighbours in a field should be between 1 and 8. Example:
+
 [1 0]
 
 |1 0|
 |0 1|
 |1 1|
+
 and 
 
 |0 1 0 1 0|
