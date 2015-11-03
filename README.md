@@ -95,17 +95,24 @@ function load_field($input_array,$rows,$col){
 
 Lets go to Task 2. A function to return the neighbour count. The number of neighbours in a field should be between 1 and 8. Example:
 
+
 [1 0]
 
+
 |1 0|
+
 |0 1|
+
 |1 1|
 
 and 
 
 |0 1 0 1 0|
+
 |1 1 0 1 1|
+
 |1 0 1 1 0|
+
 |1 1 0 1 0|
 
 You could notice that the ones at the corner will have the least neighbours, followed by the edge blocks and finally the center blocks will have the maximum neighbours. It is important to consider only the neighbour blocks which have plants. 
