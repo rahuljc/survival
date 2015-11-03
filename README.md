@@ -46,7 +46,7 @@ function simulate_generation($input_state){
 	// write the logic which simulates.
 	return $output_state;
 }
-```php
+```
 
 We need to keep on updating the input state after every generation. So, the output of the simulator becomes the input for the next generation. Lets improve the generation loop now.
 
@@ -69,7 +69,7 @@ function simulate_generation($input_state){
   // 5. If the current element is empty, check if within birth range. If yes, set value to 1 else 0.
   return $output_state;
 }
-```php
+```
 
 Ok, Task 1. We want to visualize the output in plant field, but the given array is provided in 1-dimensional. It makes sense to convert into a 2 dimensional array. So, lets write a function which converts to it. This is so that we can loop through each element inside simulate_generation.
 
@@ -90,7 +90,7 @@ function load_field($input_array,$rows,$col){
 
     return $loaded_field;
 }
- ```php
+```
 
 Lets go to Task 2. A function to return the neighbour count. The number of neighbours in a field should be between 1 and 8. Example:
 [1 0]
@@ -131,7 +131,7 @@ function neighbours_count($modified_state,$i,$j){
 
   return $neighbour_count;
 }
- ```php
+```
 
 The above code does not look efficient, but we will consider it if there are any issues in future. It is sometimes better to start optimizing only when the need is. It saves time to consider more critical things.
 
@@ -165,7 +165,7 @@ function simulate_generation($prev_state,$rows,$col,$survival_lower,$survival_up
 
     return $new_state;
 }
-
+```
 Finally put everything in a triggering function.
 
  ```php
@@ -206,7 +206,7 @@ function survivalcells($input1,$input2)   {
    return $output;
    
 }
- ```php
+```
 
 Lets write some "developer" code which would help us in debugging and improving our code clearly. So, lets write a function which will accept a 2-dimension array and prints it in a nice matrix of Plant field. Lets call this "print_field"
 
@@ -221,6 +221,8 @@ function print_field($array){
   }
   echo "</pre>";
 }
-```php
+```
+
+Don't forget to test ! Cheers.
 
 
